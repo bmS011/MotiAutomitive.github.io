@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moti Automotives - Home</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        header nav {
+            margin-top: 10px;
+        }
+
+        header nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            color: #3498db;
+        }
+
+        /* Section Styling */
+        section {
+            margin: 20px auto;
+            max-width: 1200px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        /* Featured Cars Section */
+        #featured-cars {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .car {
+            background: #ecf0f1;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .car img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .car p {
+            padding: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .car:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            background: #2c3e50;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .car {
+                width: 100%;
+            }
+
+            section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Moti Automotives</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <section id="featured-cars">
+        <h2>Featured Cars</h2>
+        <div class="car">
+            <img src="download.jpeg" alt="Porsche Cayenne">
+            <p>Porsche Cayenne - Ksh 8,999,999</p>
+        </div>
+        <div class="car">
+            <img src="range rover.jpeg" alt="Range Rover">
+            <p>Range Rover - Ksh 15,000,000</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Moti Automotives</p>
+    </footer>
+</body>
+</html>

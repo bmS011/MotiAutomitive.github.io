@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Moti Automotives</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 0 10px;
+        }
+
+        /* Header Styling */
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        header nav {
+            margin-top: 10px;
+        }
+
+        header nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            color: #3498db;
+        }
+
+        /* Section Styling */
+        section {
+            margin: 20px auto;
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        section p {
+            margin-bottom: 15px;
+        }
+
+        /* Team Section */
+        #team {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .team-member {
+            text-align: center;
+            width: 150px;
+        }
+
+        .team-member img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+
+        .team-member p {
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        /* Testimonials Section */
+        #testimonials blockquote {
+            font-style: italic;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #ecf0f1;
+            border-left: 5px solid #3498db;
+            border-radius: 5px;
+        }
+
+        #testimonials footer {
+            text-align: right;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            background: #2c3e50;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #team {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Moti Automotives</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    
+    <section id="company-info">
+        <h2>Who We Are</h2>
+        <p>
+            Moti Automotives is a trusted name in the automotive industry, providing high-quality vehicles and exceptional customer service. 
+            Established in [Year], we have helped countless customers find their perfect car with a focus on transparency, quality, and customer satisfaction.
+        </p>
+        
+        <h2>Our Mission</h2>
+        <p>
+            Our mission is to make car buying a seamless and enjoyable experience. We strive to offer a diverse range of vehicles at competitive prices,
+            ensuring our customers drive away with the car of their dreams.
+        </p>
+        
+        <h2>Our Vision</h2>
+        <p>
+            At Moti Automotives, our vision is to lead the automotive market by setting new standards in customer satisfaction, innovation, and integrity. 
+            We aim to build lasting relationships with our customers and to be their trusted automotive partner for life.
+        </p>
+    </section>
+    
+    <section id="team">
+        <h2>Meet Our Team</h2>
+        <div class="team-member">
+            <img src="download ceeo.jpeg" alt="Team Member 1">
+            <p>John Doe - Founder & CEO</p>
+        </div>
+        <div class="team-member">
+            <img src="sales manager.jpeg" alt="Team Member 2">
+            <p>Jane Smith - Sales Manager</p>
+        </div>
+        <!-- Add more team members as needed -->
+    </section>
+
+    <section id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <blockquote>
+            "Moti Automotives made my car-buying experience so easy! The team was professional, and I love my new car."
+            <footer>— Emily R.</footer>
+        </blockquote>
+        <blockquote>
+            "Highly recommend Moti Automotives! They helped me find exactly what I was looking for, within my budget."
+            <footer>— Michael T.</footer>
+        </blockquote>
+        <!-- Add more testimonials as desired -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Moti Automotives</p>
+    </footer>
+</body>
+</html>

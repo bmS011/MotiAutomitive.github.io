@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moti Automotives - Contact Us</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 0 10px;
+        }
+
+        /* Header Styling */
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        header nav {
+            margin-top: 10px;
+        }
+
+        header nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            color: #3498db;
+        }
+
+        /* Section Styling */
+        section {
+            margin: 20px auto;
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        /* Form Styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        form label {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        form input,
+        form textarea,
+        form button {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form input:focus,
+        form textarea:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+        }
+
+        form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        form button {
+            background-color: #2c3e50;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #3498db;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            background: #2c3e50;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            section {
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            header nav a {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <section id="contact-form">
+        <h2>Get in Touch</h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 Moti Automotives</p>
+    </footer>
+</body>
+</html>
